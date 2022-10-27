@@ -1,6 +1,6 @@
 # Fleet Example to demonstrate the Cilium Clustermesh
 
-```
+```yaml
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
