@@ -3,8 +3,11 @@ kind: Service
 metadata:
   name: node-name-svc
   annotations:
+    # Enable the global service
     io.cilium/global-service: "true"
+    # Allow external access
     io.cilium/shared-service: "true"
+    # Possible values: local, remote, none
     io.cilium/service-affinity: "remote"
 spec:
   selector:

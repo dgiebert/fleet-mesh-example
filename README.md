@@ -1,3 +1,6 @@
+# Fleet Example to demonstrate the Cilium Clustermesh
+
+```
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
@@ -5,8 +8,7 @@ metadata:
   namespace: fleet-default
 spec:
   branch: main
-  forceSyncGeneration: 5
-  insecureSkipTLSVerify: false
   repo: https://github.com/dgiebert/fleet-mesh-example.git
   targets:
   - clusterSelector: {}
+```
