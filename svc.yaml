@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-name-svc
+  annotations:
+    io.cilium/global-service: "true"
+    io.cilium/shared-service: "true"
+    io.cilium/service-affinity: "remote"
+spec:
+  selector:
+    name: nginx-node-name
+  ports:
+    - port: 80
