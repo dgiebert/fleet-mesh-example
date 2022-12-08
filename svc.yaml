@@ -11,7 +11,7 @@ metadata:
     io.cilium/service-affinity: "remote"
 spec:
   selector:
-    name: nginx-node-name
+    app: nginx-node-name
   ports:
     - port: 8080
       targetPort: 8080
