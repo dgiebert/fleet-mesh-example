@@ -21,7 +21,7 @@ spec:
             - sh
             - '-c'
             - >-
-              nginx  && while true; do curl -m 1 -s node-name-svc >> /dev/null; sleep 3; done
+              nginx  && while true; do curl -m 1 -s http://node-name-svc:8080 >> /dev/null; sleep 3; done
           image: nginxinc/nginx-unprivileged:alpine 
           ports:
             - name: http
