@@ -14,7 +14,7 @@ spec:
         - '-c'
         - >-
           /usr/bin/env | grep NODE_NAME= > /usr/share/nginx/html/index.html &&
-          nginx >> /dev/null && while true; do curl -s node-name-svc; sleep 3; done
+          nginx >> /dev/null && while true; do curl -m 1 -s node-name-svc; sleep 3; done
       image: nginx:alpine
       ports:
         - name: http
