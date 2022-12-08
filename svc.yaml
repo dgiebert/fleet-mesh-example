@@ -8,7 +8,7 @@ metadata:
     # Allow external access
     io.cilium/shared-service: "true"
     # Possible values: local, remote, none
-    # io.cilium/service-affinity: "remote"
+    io.cilium/service-affinity: "remote"
 spec:
   selector:
     name: nginx-node-name
